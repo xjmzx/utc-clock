@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=UTC Clock
+GenericName=UTC Time Display
+Comment=Big bold UTC time, click to copy ISO 8601
+Exec=python3 @BINDIR@/utc_clock.py
+Icon=@ICONDIR@/utc-clock.svg
+Terminal=false
+Categories=Utility;Clock;
+Keywords=utc;clock;time;iso;timestamp;zulu;
+StartupNotify=true
