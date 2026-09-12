@@ -1,18 +1,18 @@
 <svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_3328_715" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
-<rect width="1024" height="1024" fill="url(#paint0_linear_3328_715)"/>
+<mask id="mask0_3511_212" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="100" y="100" width="824" height="824">
+<rect x="100" y="100" width="824" height="824" fill="url(#paint0_linear_3511_212)"/>
 </mask>
-<g mask="url(#mask0_3328_715)">
-<rect width="1024" height="1024" rx="80" fill="#2F0056"/>
-<path d="M512 0V107.789" stroke="white" stroke-width="40"/>
-<path d="M512 916.21V1024" stroke="white" stroke-width="40"/>
-<path d="M0 512H107.789" stroke="white" stroke-width="40"/>
-<path d="M916.21 512H1024" stroke="white" stroke-width="40"/>
-<path d="M512 512V161.684" stroke="white" stroke-width="40"/>
-<path d="M492 512L781 512" stroke="white" stroke-width="40"/>
+<g mask="url(#mask0_3511_212)">
+<rect x="100" y="100" width="824" height="824" rx="185" fill="black"/>
+<path d="M512 100V186.737" stroke="white" stroke-width="40"/>
+<path d="M512 837.263V924" stroke="white" stroke-width="40"/>
+<path d="M100 512H186.737" stroke="white" stroke-width="40"/>
+<path d="M837.263 512H924" stroke="white" stroke-width="40"/>
+<path d="M512 512V266" stroke="white" stroke-width="40"/>
+<path d="M492 512L728 512" stroke="white" stroke-width="40"/>
 </g>
 <defs>
-<linearGradient id="paint0_linear_3328_715" x1="512" y1="0" x2="512" y2="1024" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_3511_212" x1="512" y1="100" x2="512" y2="924" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1E1E2E"/>
 <stop offset="1" stop-color="#616194"/>
 </linearGradient>
