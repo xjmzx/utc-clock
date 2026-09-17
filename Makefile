@@ -3,6 +3,13 @@ BINDIR  ?= $(PREFIX)/bin
 APPDIR  ?= $(PREFIX)/share/applications
 ICONDIR ?= $(PREFIX)/share/icons/hicolor/scalable/apps
 
+# Linux icons crop the grid margin. The masters carry the art in an 824 square
+# on a 1024 canvas (Apple's grid, ICONS.md), which fills 80.5% of the tile --
+# visibly smaller in the dock than Yaru's own icons, which fill 89%. Cropping to
+# this viewBox gets the same 89% out of the master with no re-export. The .icns
+# and the .ico keep the full canvas.
+LINUX_VIEWBOX ?= 49 49 926 926
+
 DESKTOP_OUT := $(APPDIR)/utc-clock.desktop
 
 .PHONY: help run check install uninstall
@@ -32,7 +39,9 @@ check:
 install:
 	install -d $(BINDIR) $(APPDIR) $(ICONDIR)
 	install -m 0755 utc_clock.py $(BINDIR)/utc_clock.py
-	install -m 0644 icon.svg     $(ICONDIR)/utc-clock.svg
+	@# Linux fill: crop the grid margin on the way in (see LINUX_VIEWBOX).
+	sed '1s|viewBox="[^"]*"|viewBox="$(LINUX_VIEWBOX)"|' icon.svg > $(ICONDIR)/utc-clock.svg
+	chmod 0644 $(ICONDIR)/utc-clock.svg
 	sed -e 's|@BINDIR@|$(BINDIR)|g' \
 	    -e 's|@ICONDIR@|$(ICONDIR)|g' \
 	    utc-clock.desktop.in > $(DESKTOP_OUT)
