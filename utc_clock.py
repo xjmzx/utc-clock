@@ -8,7 +8,7 @@ import tkinter.font as tkfont
 
 # --- Identity ---
 APP_NAME = "UTC clock"
-VERSION = "0.1"
+VERSION = "0.1.0"
 
 # --- Design tokens ---
 # Mirrors the ndisc-suite fizx palette (see bpm-tapper for the same set).
